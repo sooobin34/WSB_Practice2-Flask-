@@ -86,58 +86,58 @@ message: 상태 메시지
 
 Postman을 활용해 구현한 API들을 모두 테스트하였습니다.
 
-- POST /items 성공 및 실패 테스트
-성공: ![post_items_success](images/post_items_success.png)
+1) POST /items 성공 및 실패 테스트
+- 성공: ![post_items_success](images/post_items_success.png)
 
-실패: ![post_items_error](images/post_items_error.png)
-
-
-- POST /users 성공 및 실패 테스트
-성공: ![post_users_success](images/post_users_success.png)
-
-실패: ![post_users_error](images/post_users_error.png)
+- 실패: ![post_items_error](images/post_items_error.png)
 
 
-- GET /items 전체 조회 결과
-![get_items_all](images/get_items_all.png)
+2) POST /users 성공 및 실패 테스트
+- 성공: ![post_users_success](images/post_users_success.png)
+
+- 실패: ![post_users_error](images/post_users_error.png)
 
 
-- GET /items/<id> 성공 및 실패 테스트 
-성공: ![get_items_id_success](images/get_items_id_success.png)
-
-실패: ![get_items_id_error](images/get_items_id_error.png)
+3) GET /items 전체 조회 결과
+- ![get_items_all](images/get_items_all.png)
 
 
-- PUT /items/<id> 수정 성공 및 실폐 테스트
-성공: ![put_items_id_success](images/put_items_id_success.png)
+4) GET /items/<id> 성공 및 실패 테스트 
+- 성공: ![get_items_id_success](images/get_items_id_success.png)
 
-실패: ![put_items_id_error](images/put_items_id_error.png)
-
-
-- PUT /users/<id> 수정 성공 및 실폐 테스트
-성공: ![put_users_id_success](images/put_users_id_success.png)
-
-실패: ![put_users_id_error](images/put_users_id_error.png)
+- 실패: ![get_items_id_error](images/get_items_id_error.png)
 
 
-- DELETE /items/<id> 삭제 성공 및 삭제 후 재삭제 시 404 응답
-성공: ![delete_items_id_success](images/delete_items_id_success.png)
+5) PUT /items/<id> 수정 성공 및 실폐 테스트
+- 성공: ![put_items_id_success](images/put_items_id_success.png)
 
-재삭제: ![delete_items_id_error](images/delete_items_id_error.png)
-
-
-- DELETE /users/<id> 삭제 성공 및 삭제 후 재삭제 시 404 응답
-성공: ![delete_users_id_success](images/delete_users_id_success.png)
-
-재삭제: ![delete_users_id_error](images/delete_users_id_error.png)
+- 실패: ![put_items_id_error](images/put_items_id_error.png)
 
 
-- 500 Internal Server Error 테스트
-1) GET /items?force_error=true → 강제 예외 발생 (500)
+6) PUT /users/<id> 수정 성공 및 실폐 테스트
+- 성공: ![put_users_id_success](images/put_users_id_success.png)
+
+- 실패: ![put_users_id_error](images/put_users_id_error.png)
+
+
+7) DELETE /items/<id> 삭제 성공 및 삭제 후 재삭제 시 404 응답
+- 성공: ![delete_items_id_success](images/delete_items_id_success.png)
+
+- 재삭제: ![delete_items_id_error](images/delete_items_id_error.png)
+
+
+8) DELETE /users/<id> 삭제 성공 및 삭제 후 재삭제 시 404 응답
+- 성공: ![delete_users_id_success](images/delete_users_id_success.png)
+
+- 재삭제: ![delete_users_id_error](images/delete_users_id_error.png)
+
+
+9) 500 Internal Server Error 테스트
+- GET /items?force_error=true → 강제 예외 발생 (500)
 ![server_error_1](images/server_error_1.png)
 
 
-2) app.errorhandler(500) – 전역 500 오류 핸들러 직접 테스트
+- app.errorhandler(500) – 전역 500 오류 핸들러 직접 테스트
 ![server_error_2](images/server_error_2.png)
 
 
